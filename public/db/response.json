@@ -1,0 +1,13 @@
+{
+  "components": {
+    "flash_message": {
+      "title": "Елементът е добавен успешно",
+      "message": null,
+      "timeout": 5000
+    },
+    "redirect": {
+      "url": "http://api.netix.local/admin/events/2/edit",
+      "timeout": 5000
+    }
+  }
+} 

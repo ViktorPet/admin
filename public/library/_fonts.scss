@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'AcariSansBlack';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/5669e238df4fff4ca8f58e8cab4a2f06/AcariSansBlack.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AcariSansBlackItalic';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/d3c031c526821894d18a0d947de495d1/AcariSansBlackItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AcariSansBold';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/0aa46031b8921cad79b9bd5590ea25b2/AcariSansBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AcariSansBoldItalic';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/df988b40f46ec2a2b186f9c0d251df7f/AcariSansBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AcariSansExtraLight';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/07b6b5e0f531a572f688b3705e6ce0bb/AcariSansExtraLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AcariSansExtraLightItalic';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/d2cc7f7ec140e235df971f2ccaa573e9/AcariSansExtraLightItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AcariSansItalic';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/e0f3a61c64b49578c47351f6e92a439c/AcariSansItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AcariSansLight';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/f55e549d745fabf7c78438d1e598d7e7/AcariSansLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AcariSansLightItalic';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/7408782828460bebcde28821323f5604/AcariSansLightItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AcariSansMedium';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/c14cc95af27ad188193060721f7775ef/AcariSansMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AcariSansMediumItalic';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/b8c2b469bf0156069b5873acbef8495e/AcariSansMediumItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AcariSansRegular';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/d4cc44fc1ce4a360f6e00d7f3538fbda/AcariSansRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AcariSansSemiBold';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/303f1c4429a448309fe3738dc89cff23/AcariSansSemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AcariSansSemiBoldItalic';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/1fd228be87b4ee0b37c57c3636573270/AcariSansSemiBoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HKGroteskSemiBold';
+  src: url('/assets/fonts/acari-sans/449c51f8278cefd3148a711b988777e3/9ba6593d101002445aab62cc7748f8fb/HKGroteskSemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* The following rules are deprecated. */
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/5669e238df4fff4ca8f58e8cab4a2f06/AcariSansBlack.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/d3c031c526821894d18a0d947de495d1/AcariSansBlackItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/0aa46031b8921cad79b9bd5590ea25b2/AcariSansBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/df988b40f46ec2a2b186f9c0d251df7f/AcariSansBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/07b6b5e0f531a572f688b3705e6ce0bb/AcariSansExtraLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/d2cc7f7ec140e235df971f2ccaa573e9/AcariSansExtraLightItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/e0f3a61c64b49578c47351f6e92a439c/AcariSansItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/f55e549d745fabf7c78438d1e598d7e7/AcariSansLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/7408782828460bebcde28821323f5604/AcariSansLightItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/c14cc95af27ad188193060721f7775ef/AcariSansMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/b8c2b469bf0156069b5873acbef8495e/AcariSansMediumItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/d4cc44fc1ce4a360f6e00d7f3538fbda/AcariSansRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/303f1c4429a448309fe3738dc89cff23/AcariSansSemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Acari Sans';
+  src: url('/assets/fonts/acari-sans/612885b499c4d6660b43f530c268294e/1fd228be87b4ee0b37c57c3636573270/AcariSansSemiBoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('/assets/fonts/acari-sans/449c51f8278cefd3148a711b988777e3/9ba6593d101002445aab62cc7748f8fb/HKGroteskSemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+

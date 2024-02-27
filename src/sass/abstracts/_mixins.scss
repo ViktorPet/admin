@@ -1,0 +1,212 @@
+/* Mixins */
+@mixin horizontal-vertical-align($align-items, $justify-content, $height) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  height: $height;
+}
+@mixin reset-select-appearance {
+  outline: none;
+  background: none;
+  border: none;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+}
+@mixin reset-button-appearance {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  line-height: normal;
+  overflow: visible;
+  -webkit-appearance: button; /* for input */
+  -webkit-user-select: none; /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+@mixin changeColor($text-color, $backgroundColor) {
+  color: $text-color;
+  background-color: $backgroundColor;
+}
+
+// prefix declarations
+@mixin prefixed($property, $value) {
+  #{$property}: #{$value};
+}
+@mixin sweepToRight($color, $backgroundColor) {
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $backgroundColor;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  &:hover {
+    color: $color;
+    &:before {
+      transform: scaleX(1)
+    }
+  }
+}
+@mixin placeholderColor($color) {
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $color;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $color;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $color;
+  }
+  ::-moz-placeholder { /* Firefox 18- */
+    color: $color;
+  }
+}
+@mixin placeholderFontFamily($font-family) {
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: $font-family;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-family: $font-family;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-family: $font-family;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-family: $font-family;
+  }
+}
+@mixin box-shadow($h-offset, $v-offset, $blur, $spread, $color) {
+  box-shadow: $h-offset $v-offset $blur $spread $color;
+  -webkit-box-shadow: $h-offset $v-offset $blur $spread $color;
+  -moz-box-shadow: $h-offset $v-offset $blur $spread $color;
+}
+@mixin transition($prop, $time, $func) {
+  transition: $prop $time $func;
+}
+@mixin closeIcon($width, $height,$top, $left, $right) {
+  width: $width;
+  height: $height;
+  list-style: none;
+  margin: -15px 0 0 -15px;
+  padding: 0;
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  transform: translateZ(0);
+  cursor: pointer;
+  .bar1, .bar2 {
+    width: 100%;
+    height: 3px;
+    background-color: $color-grey-dark;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.75px;
+    transform: translateY(-3.75px) translateZ(0);
+  }
+
+  .bar1 {
+    transform: rotate(45deg) translateZ(0);
+  }
+  .bar2 {
+    transform: rotate(-45deg) translateZ(0);
+  }
+}
+@mixin triangle($top, $bottom, $right, $left) {
+  border-top: $top;
+  border-bottom: $bottom;
+  border-right: $right;
+  border-left: $left;
+}
+@mixin underline($left, $bottom, $width, $border-bottom) {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  border-bottom: $border-bottom;
+}
+
+
+$default-border-radius: 15px;
+@mixin border-radius {
+  border-radius: $default-border-radius!important;
+}
+@mixin clearfix {
+  &::after{
+    display: block;
+    content: '';
+    clear: both;
+    z-index: 1;
+  }
+}
+@mixin button-color($text-color, $background-color,$border) {
+  color: $text-color!important;
+  background-color: $background-color!important;
+  border: 1px solid $border!important;
+}
+@mixin button-size($height, $line-height) {
+  height: $height;
+  line-height: $line-height;
+}
+
+// Label colors:
+
+@mixin label-color($background-color) {
+  background-color: $background-color;
+}
+
+// MEDIA QUERY MANAGER
+
+@mixin respond($breakpoint) {
+  @if($breakpoint == device-360) { @media (max-width: 360px) { @content };}
+  @if($breakpoint == device-380) { @media (max-width: 380px) { @content };}
+  @if($breakpoint == device-460) { @media (max-width: 460px) { @content };}
+  @if($breakpoint == device-480) { @media (max-width: 480px) { @content };}
+  @if($breakpoint == device-540) { @media (max-width: 540px) { @content };}
+  @if($breakpoint == device-580) { @media (max-width: 580px) { @content };}
+  @if($breakpoint == device-660) { @media (max-width: 660px) { @content };}
+  @if($breakpoint == device-720) { @media (max-width: 720px) { @content };}
+  @if($breakpoint == device-767) { @media (max-width: 767px) { @content };}
+  @if($breakpoint == device-860) { @media (max-width: 860px) { @content };}
+  @if($breakpoint == device-980) { @media (max-width: 980px) { @content };}
+  @if($breakpoint == device-1080) { @media (max-width: 1080px) { @content };}
+  @if($breakpoint == device-1140) { @media (max-width: 1140px) { @content };}
+  @if($breakpoint == device-1200) { @media (max-width: 1200px) { @content };}
+  @if($breakpoint == device-1280) { @media (max-width: 1280px) { @content };}
+  @if($breakpoint == device-1380) { @media (max-width: 1380px) { @content };}
+  @if($breakpoint == device-1430) { @media (max-width: 1430px) { @content };}
+  @if($breakpoint == device-1600) { @media (max-width: 1600px) { @content };}
+  @if($breakpoint == big-desktop) { @media (min-width: 112.5em) { @content };}
+}

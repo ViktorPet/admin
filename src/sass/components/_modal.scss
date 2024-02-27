@@ -1,0 +1,5 @@
+.modal {
+  @include respond(device-380) {
+    position: absolute;
+  }
+}

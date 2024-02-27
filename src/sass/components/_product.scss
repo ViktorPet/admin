@@ -1,0 +1,88 @@
+//@import "../abstracts/mixins";
+//@import "../abstracts/variables";
+
+$product-font-size: 15px;
+$product-line-height: 20px;
+$product-price-size: 16px;
+$labels-size: 14px;
+$labels-line-height: 18px;
+$letter-spacing: 0.1em;
+
+.discount-label,
+.availability {
+  display: inline-block;
+  position: absolute;
+  background: $color-light-red;
+  color: $color-white;
+  font-size: $labels-size;
+  line-height: $labels-line-height;
+  letter-spacing: $letter-spacing;
+  box-shadow: 0 0 25px rgba(217, 39, 46, 0.15);
+  border-radius: 2px;
+  padding: 5px 13px;
+  margin: 0 0 0 10px;
+}
+
+.availability {
+  background: $color-orange;
+}
+
+.title {
+  font-size: $product-font-size;
+  line-height: $product-line-height;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing;
+  margin: 10px 0;
+}
+
+.item-img {
+  margin-bottom: 40px;
+}
+
+.base-img {
+  margin: 0 auto;
+}
+
+.product-price {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.old-price {
+  text-decoration-line: line-through;
+  margin-right: 20px;
+}
+
+.old-price, .price {
+  font-size: $product-price-size;
+  color: $color-grey-light-1;
+  text-transform: uppercase;
+  line-height: 21px;
+  letter-spacing: $letter-spacing;
+  font-weight: bold;
+  @include respond(device-480) {
+    display: block;
+    margin: 0;
+  }
+}
+
+
+
+.price {
+  color: $color-red;
+}
+
+.details.btn {
+  width: 130px;
+  margin: 10px auto;
+  @include transition(all, .3s, ease-in);
+  &:hover {
+    @include transition(all, .3s, ease-in);
+    @include changeColor($color-white, $color-red);
+    &:before {
+      content: url("../../image/icons/white-cart.svg");
+    }
+  }
+
+}

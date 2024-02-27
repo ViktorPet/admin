@@ -1,0 +1,33 @@
+.search-result {
+  .vacancy {
+    a {
+      color: $color-white;
+
+
+    }
+    .accordion__content--text {
+      a {
+        border-bottom: 1px solid $color-white;
+        &:hover {
+          border-color: $color-orange;
+        }
+        &:not(:last-of-type) {
+          display: inline-block;
+          margin-bottom: 2rem;
+
+          @include respond(device-360) {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .circle-plus {
+    .circle {
+      border-color: $color-white;
+      &:before, &:after {
+        border-color: $color-white;
+      }
+    }
+  }
+}

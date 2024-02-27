@@ -1,0 +1,230 @@
+{
+  "localization": {},
+  "components": {
+    "list": {
+      "elements_heading": [
+        {
+          "type": "string",
+          "constants": "title",
+          "value": "Заглавие на новина"
+        },
+        {
+          "type": "string",
+          "constants": "title",
+          "value": "Домейн"
+        },
+        {
+          "type": "string",
+          "constants": "title",
+          "value": "Дата"
+        },
+        {
+          "type": "string",
+          "constants": "title",
+          "value": "Опции"
+        }
+      ],
+      "elements": [
+        {
+          "primary_key": 1,
+          "buttons": [
+            {
+              "type": "section",
+              "url": "http:\/\/localhost:8000\/admin\/news\/1\/sections",
+              "method": "GET",
+              "class": " entity-sections"
+            },
+            {
+              "type": "toggle_favorite_button",
+              "url": "http:\/\/localhost:8000\/admin\/news\/favorite_status\/1",
+              "method": "PUT",
+              "is_published": 0
+            },
+            {
+              "type": "toggle_button",
+              "url": "http:\/\/localhost:8000\/admin\/news\/status\/1",
+              "method": "PUT",
+              "is_published": 1
+            },
+
+            {
+              "type": "edit",
+              "url1": "http:\/\/localhost:8080\/admin\/news\/1\/edit",
+              "url": "/db/edit.json",
+              "redirect": "/admin/pages/1/edit",
+              "method": "GET",
+              "class": "glyphicon glyphicon-edit"
+            },
+            {
+              "type": "delete",
+              "url": "http:\/\/localhost:8000\/admin\/news\/1",
+              "method": "DELETE",
+              "class": "glyphicon glyphicon-trash"
+            }
+          ],
+          "column_elements": [
+            {
+              "type": "image",
+              "constants": "cover",
+              "value": "/assets/pics/bread-with-cheese.jpg"
+            },
+            {
+              "type": "string",
+              "constants": "title",
+              "value": " Neterra's Amateur Radio Club made 180 connections in a world contest"
+            },
+            {
+              "type": "string",
+              "constants": "title",
+              "value": "beta.neterra.net"
+            },
+            {
+              "type": "string",
+              "constants": "title",
+              "value": "11.02.2019г"
+            }
+          ],
+          "children": []
+        },
+        {
+          "primary_key": 2,
+          "buttons": [
+            {
+              "type": "section",
+              "url": "http:\/\/localhost:8000\/admin\/pages\/2\/sections",
+              "method": "GET",
+              "class": " entity-sections"
+            },
+            {
+              "type": "toggle_favorite_button",
+              "url": "http:\/\/localhost:8000\/admin\/pages\/favorite_status\/1",
+              "method": "PUT",
+              "is_published": 1
+            },
+            {
+              "type": "toggle_button",
+              "url": "http:\/\/localhost:8000\/admin\/pages\/status\/2",
+              "method": "PUT",
+              "is_published": 0
+            },
+
+            {
+              "type": "edit",
+              "url1": "http:\/\/localhost:8080\/admin\/pages\/2\/edit",
+              "url": "/db/edit.json",
+              "redirect": "/admin/pages/2/edit",
+              "method": "GET",
+              "class": "glyphicon glyphicon-edit"
+            },
+            {
+              "type": "delete",
+              "url": "http:\/\/localhost:8000\/admin\/pages\/2",
+              "method": "DELETE",
+              "class": "glyphicon glyphicon-trash"
+            }
+          ],
+          "column_elements": [
+            {
+              "type": "image",
+              "constants": "cover",
+              "value": "https://beta.neterra.net/images/upload/news/2019/J_Marinova.jpg"
+            },
+            {
+              "type": "string",
+              "constants": "title",
+              "value": "Jasmina Marinova: Neterra inspires talent"
+            },
+            {
+              "type": "string",
+              "constants": "title",
+              "value": "beta.neterra.net"
+            },
+            {
+              "type": "string",
+              "constants": "title",
+              "value": "11.02.2019г"
+            }
+          ],
+          "children": []
+        },
+        {
+          "primary_key": 3,
+          "buttons": [
+            {
+              "type": "section",
+              "url": "http:\/\/localhost:8000\/admin\/news\/3\/sections",
+              "method": "GET",
+              "class": " entity-sections"
+            },
+            {
+              "type": "toggle_favorite_button",
+              "url": "http:\/\/localhost:8000\/admin\/news\/favorite_status\/1",
+              "method": "PUT",
+              "is_published": 1
+            },
+            {
+              "type": "toggle_button",
+              "url": "http:\/\/localhost:8000\/admin\/news\/status\/2",
+              "method": "PUT",
+              "is_published": 0
+            },
+
+            {
+              "type": "edit",
+              "url1": "http:\/\/localhost:8080\/admin\/news\/2\/edit",
+              "url": "/db/edit.json",
+              "redirect": "/admin/pages/2/edit",
+              "method": "GET",
+              "class": "glyphicon glyphicon-edit"
+            },
+            {
+              "type": "delete",
+              "url": "http:\/\/localhost:8000\/admin\/news\/2",
+              "method": "DELETE",
+              "class": "glyphicon glyphicon-trash"
+            }
+          ],
+          "column_elements": [
+            {
+              "type": "image",
+              "constants": "cover",
+              "value": "https://beta.neterra.net/images/upload/news/2019/Radio%20Contest/radio_new%20website.jpg"
+            },
+            {
+              "type": "string",
+              "constants": "title",
+              "value": "Jasmina Marinova: Neterra inspires talent"
+            },
+            {
+              "type": "string",
+              "constants": "title",
+              "value": "beta.neterra.net"
+            },
+            {
+              "type": "string",
+              "constants": "title",
+              "value": "11.02.2019г"
+            }
+          ],
+          "children": []
+        }
+      ],
+      "navbar": {
+        "buttons": [
+          {
+            "type": "create",
+            "url": "http:\/\/localhost:8000\/admin\/news\/create",
+            "method": "GET",
+            "constants": "create"
+          }
+        ]
+      },
+      "pagination": {
+        "total": 3,
+        "per_page": 30,
+        "page": 1
+      }
+    }
+  }
+}
+

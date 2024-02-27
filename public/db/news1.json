@@ -1,0 +1,344 @@
+{
+  "page_title": "\u041d\u043e\u0432\u0438\u043d\u0438",
+  "components": {
+    "form": {
+      "groups": [
+        {
+          "children": [
+            {
+              "group_heading": "\u041e\u0441\u043d\u043e\u0432\u043d\u0438",
+              "fields": {
+                "2": {
+                  "title": {
+                    "type": "string",
+                    "label": "\u0417\u0430\u0433\u043b\u0430\u0432\u0438\u0435",
+                    "name": "translations.2.title",
+                    "value": "test news en",
+                    "hide": false,
+                    "class": "col-lg-12"
+                  },
+                  "language_id": {
+                    "type": "hidden",
+                    "label": null,
+                    "name": "translations.2.language_id",
+                    "value": 2,
+                    "hide": true,
+                    "class": "col-lg-12"
+                  },
+                  "subtitle": {
+                    "type": "string",
+                    "label": "\u041f\u043e\u0434\u0437\u0430\u0433\u043b\u0430\u0432\u0438\u0435",
+                    "name": "translations.2.subtitle",
+                    "value": "subtitle news en",
+                    "hide": false,
+                    "class": "col-lg-12"
+                  },
+                  "description": {
+                    "type": "textarea",
+                    "label": "\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435",
+                    "name": "translations.2.description",
+                    "value": null,
+                    "hide": false,
+                    "class": "col-lg-12",
+                    "component": "editor"
+                  }
+                },
+                "1": {
+                  "title": {
+                    "type": "string",
+                    "label": "\u0417\u0430\u0433\u043b\u0430\u0432\u0438\u0435",
+                    "name": "translations.1.title",
+                    "value": "test news",
+                    "hide": false,
+                    "class": "col-lg-12"
+                  },
+                  "language_id": {
+                    "type": "hidden",
+                    "label": null,
+                    "name": "translations.1.language_id",
+                    "value": 1,
+                    "hide": true,
+                    "class": "col-lg-12"
+                  },
+                  "subtitle": {
+                    "type": "string",
+                    "label": "\u041f\u043e\u0434\u0437\u0430\u0433\u043b\u0430\u0432\u0438\u0435",
+                    "name": "translations.1.subtitle",
+                    "value": "subtitle news",
+                    "hide": false,
+                    "class": "col-lg-12"
+                  },
+                  "description": {
+                    "type": "textarea",
+                    "label": "\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435",
+                    "name": "translations.1.description",
+                    "value": null,
+                    "hide": false,
+                    "class": "col-lg-12",
+                    "component": "editor"
+                  }
+                }
+              },
+              "components": [
+                "translations"
+              ],
+              "class": "row col-lg-12"
+            },
+            {
+              "group_heading": "SEO \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438",
+              "fields": {
+                "2": {
+                  "meta_title": {
+                    "type": "string",
+                    "label": "\u041c\u0435\u0442\u0430 \u0417\u0430\u0433\u043b\u0430\u0432\u0438\u0435",
+                    "name": "translations.2.meta_title",
+                    "value": null,
+                    "hide": false,
+                    "class": "col-lg-12",
+                    "component": "seo_title"
+                  },
+                  "alias": {
+                    "type": "string",
+                    "label": "Seo Url",
+                    "name": "slug.2.alias",
+                    "value": "test-news-en",
+                    "hide": false,
+                    "class": "col-lg-12",
+                    "prefix": "",
+                    "component": "seo_alias"
+                  },
+                  "language_id": {
+                    "type": "hidden",
+                    "label": null,
+                    "name": "slug.2.language_id",
+                    "value": 2,
+                    "hide": true,
+                    "class": "col-lg-12"
+                  },
+                  "meta_description": {
+                    "type": "textarea",
+                    "label": "\u041c\u0435\u0442\u0430 \u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435",
+                    "name": "translations.2.meta_description",
+                    "value": null,
+                    "hide": false,
+                    "class": "col-lg-12",
+                    "component": "seo_description"
+                  }
+                },
+                "1": {
+                  "meta_title": {
+                    "type": "string",
+                    "label": "\u041c\u0435\u0442\u0430 \u0417\u0430\u0433\u043b\u0430\u0432\u0438\u0435",
+                    "name": "translations.1.meta_title",
+                    "value": null,
+                    "hide": false,
+                    "class": "col-lg-12",
+                    "component": "seo_title"
+                  },
+                  "alias": {
+                    "type": "string",
+                    "label": "Seo Url",
+                    "name": "slug.1.alias",
+                    "value": "test-news",
+                    "hide": false,
+                    "class": "col-lg-12",
+                    "prefix": "",
+                    "component": "seo_alias"
+                  },
+                  "language_id": {
+                    "type": "hidden",
+                    "label": null,
+                    "name": "slug.1.language_id",
+                    "value": 1,
+                    "hide": true,
+                    "class": "col-lg-12"
+                  },
+                  "meta_description": {
+                    "type": "textarea",
+                    "label": "\u041c\u0435\u0442\u0430 \u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435",
+                    "name": "translations.1.meta_description",
+                    "value": null,
+                    "hide": false,
+                    "class": "col-lg-12",
+                    "component": "seo_description"
+                  }
+                }
+              },
+              "components": [
+                "translations",
+                "seo"
+              ],
+              "class": "row col-lg-12"
+            }
+          ],
+          "class": "col-lg-8"
+        },
+        {
+          "children": [
+            {
+              "group_heading": "\u041e\u043f\u0446\u0438\u0438",
+              "icon": "settings",
+              "fields": {
+                "status": {
+                  "type": "select",
+                  "label": "\u0421\u0442\u0430\u0442\u0443\u0441",
+                  "name": "news.status",
+                  "value": 1,
+                  "hide": false,
+                  "class": "col-lg-12",
+                  "choices": [
+                    {
+                      "id": 0,
+                      "label": "\u0417\u0430\u0431\u0440\u0430\u043d\u0435\u043d"
+                    },
+                    {
+                      "id": 1,
+                      "label": "\u0420\u0430\u0437\u0440\u0435\u0448\u0435\u043d"
+                    }
+                  ]
+                },
+                "date_published": {
+                  "type": "date",
+                  "label": "\u0414\u0430\u0442\u0430 \u043d\u0430 \u043f\u0443\u0431\u043b\u0438\u043a\u0443\u0432\u0430\u043d\u0435",
+                  "name": "news.date_published",
+                  "value": "2021-01-13T00:00:00.000+03:00",
+                  "hide": false,
+                  "class": "col-lg-12",
+                  "component": "datetime"
+                }
+              },
+              "class": "col-lg-12"
+            },
+            {
+              "group_heading": "\u0414\u043e\u043f\u044a\u043b\u043d\u0438\u0442\u0435\u043b\u043d\u0438 \u043e\u043f\u0446\u0438\u0438",
+              "fields": {
+                "category_label": {
+                  "type": "select",
+                  "label": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f",
+                  "name": "news.category",
+                  "value": 1,
+                  "hide": false,
+                  "class": "col-lg-12",
+                  "choices": [
+                    {
+                      "id": 1,
+                      "label": "test bg"
+                    }
+                  ]
+                },
+                "tags_label": {
+                  "type": "checkbox",
+                  "label": "\u0422\u0430\u0433\u043e\u0432\u0435",
+                  "name": "news.tags",
+                  "value": [3,1],
+                  "hide": false,
+                  "class": "col-lg-12",
+                  "choices": [
+                    {
+                      "id": 1,
+                      "label": "test"
+                    },
+                    {
+                      "id": 2,
+                      "label": "test"
+                    },
+                    {
+                      "id": 3,
+                      "label": "test martin"
+                    }
+                  ]
+                }
+              },
+              "class": "col-lg-12"
+            },
+            {
+              "group_heading": "\u0421\u043d\u0438\u043c\u043a\u0430",
+              "icon": "image",
+              "fields": {
+                "cover": {
+                  "type": "file",
+                  "label": "\u0421\u043d\u0438\u043c\u043a\u0430",
+                  "name": "news.cover",
+                  "value": "\/assets\/logo\/no_image.png",
+                  "hide": false,
+                  "class": "col-lg-12",
+                  "file_manager_url": "http:\/\/127.0.0.1:8000\/admin\/file_manager\/dialog.php",
+                  "id": "news-cover",
+                  "component": "file_manager"
+                }
+              },
+              "components": [
+                "file"
+              ],
+              "class": "col-lg-12"
+            }
+          ],
+          "class": "row col-lg-3"
+        },
+        {
+          "class": "hidden",
+          "fields": [
+            {
+              "type": "hidden",
+              "label": null,
+              "name": "_entity_id",
+              "value": 1,
+              "hide": true,
+              "class": "col-lg-12"
+            }
+          ]
+        }
+      ],
+      "action": "http:\/\/127.0.0.1:8000\/admin\/news\/1",
+      "method": "put",
+      "buttons": [
+        {
+          "type": "submit",
+          "url": "http:\/\/127.0.0.1:8000\/admin\/news\/1",
+          "method": "put",
+          "text": "\u0417\u0430\u043f\u0438\u0448\u0438"
+        },
+        {
+          "type": "close",
+          "url": "\/admin\/news?id=1",
+          "method": "get",
+          "text": "\u0417\u0430\u0442\u0432\u043e\u0440\u0438"
+        }
+      ]
+    }
+  },
+  "domain": {
+    "domain_image": "",
+    "domain": "localhost:8000",
+    "link": "http:\/\/127.0.0.1:8000\/en"
+  },
+  "token": "Dr9HNA1l1dAmIgvbjIgy7u9UMvM5sgZsHdEKXfBD",
+  "languages": {
+    "2": {
+      "language_id": 2,
+      "name": "English",
+      "code": "en",
+      "active": false,
+      "default": 0
+    },
+    "1": {
+      "language_id": 1,
+      "name": "\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438",
+      "code": "bg",
+      "active": true,
+      "default": 1
+    }
+  },
+  "user": [
+    {
+      "href": "\/admin\/users\/2\/edit",
+      "text": "\u0420\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u0430\u0439",
+      "type": "vue"
+    },
+    {
+      "href": "http:\/\/127.0.0.1:8000\/logout",
+      "text": "\u0418\u0437\u0445\u043e\u0434",
+      "type": "default"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "localization": {
+    "form": {
+      "fields": {
+        "module": "\u041c\u043e\u0434\u0443\u043b",
+        "link": "\u041b\u0438\u043d\u043a",
+        "link_text": "\u041b\u0438\u043d\u043a (\u0422\u0435\u043a\u0441\u0442)",
+        "cover": "\u0421\u043d\u0438\u043c\u043a\u0430",
+        "description": "\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435",
+        "title": "\u0417\u0430\u0433\u043b\u0430\u0432\u0438\u0435"
+      },
+      "groups": {
+        "heading": {
+          "section_type": "\u0422\u0438\u043f",
+          "options": "\u041e\u043f\u0446\u0438\u0438",
+          "general": "\u041e\u0441\u043d\u043e\u0432\u043d\u0438"
+        }
+      }
+    },
+    "page_heading": "\u0421\u0435\u043a\u0446\u0438\u0438"
+  },
+  "languages": {
+    "1": {
+      "language_id": 1,
+      "name": "\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438",
+      "code": "bg"
+    },
+    "2": {
+      "language_id": 2,
+      "name": "English",
+      "code": "en"
+    }
+  },
+  "components": {
+    "form": {
+      "groups": [
+        {
+          "fields": {
+            "parent_id": {
+              "type": "hidden",
+              "hide": true,
+              "value": 0,
+              "name": "section.parent_id"
+            }
+          },
+          "class": " hide"
+        },
+        {
+          "group_heading": "general",
+          "fields": {
+            "1": {
+              "title": {
+                "type": "string",
+                "hide": false,
+                "value": null,
+                "name": "translations.1.title"
+              },
+              "language_id": {
+                "type": "hidden",
+                "value": 1,
+                "name": "translations.1.language_id"
+              },
+              "description": {
+                "type": "textarea",
+                "component": "editor",
+                "hide": false,
+                "value": null,
+                "name": "translations.1.description"
+              },
+              "link_text": {
+                "type": "string",
+                "hide": true,
+                "value": null,
+                "name": "translations.1.link_text"
+              },
+              "link": {
+                "type": "string",
+                "hide": true,
+                "value": null,
+                "name": "translations.1.link_text"
+              }
+            },
+            "2": {
+              "title": {
+                "type": "string",
+                "hide": false,
+                "value": null,
+                "name": "translations.2.title"
+              },
+              "language_id": {
+                "type": "hidden",
+                "value": 2,
+                "name": "translations.2.language_id"
+              },
+              "description": {
+                "type": "textarea",
+                "component": "editor",
+                "hide": false,
+                "value": null,
+                "name": "translations.2.description"
+              },
+              "link_text": {
+                "type": "string",
+                "hide": true,
+                "value": null,
+                "name": "translations.2.link_text"
+              },
+              "link": {
+                "type": "string",
+                "hide": true,
+                "value": null,
+                "name": "translations.2.link_text"
+              }
+            }
+          },
+          "components": [
+            "translation"
+          ],
+          "class": "col-lg-9"
+        },
+        {
+          "group_heading": "cover",
+          "fields": {
+            "1": {
+              "cover": {
+                "type": "file",
+                "component": "file_manager",
+                "hide": true,
+                "value": null,
+                "name": "translations.1.cover",
+                "file_manager_url": "http:\/\/localhost:8000\/file_manager\/dialog.php"
+              }
+            },
+            "2": {
+              "cover": {
+                "type": "file",
+                "component": "file_manager",
+                "hide": true,
+                "value": null,
+                "name": "translations.2.cover",
+                "file_manager_url": "http:\/\/localhost:8000\/file_manager\/dialog.php"
+              }
+            }
+          },
+          "components": [
+            "file",
+            "translation"
+          ],
+          "class": "col-lg-3 hide"
+        },
+        {
+          "group_heading": "section_module",
+          "fields": {
+            "module": {
+              "type": "checkbox",
+              "choices_key": "module_items",
+              "hide": false,
+              "choices": {
+                "1": "Title Lang 1",
+                "2": "Element 2 Lang 1"
+              },
+              "value": null,
+              "name": "section.module"
+            }
+          },
+          "class": "col-lg-3"
+        },
+        {
+          "group_heading": "section_type",
+          "fields": {
+            "type": {
+              "type": "hidden",
+              "component": "section_type",
+              "action": "http:\/\/localhost:8000\/admin\/pages\/1\/sections\/types",
+              "image": "https:\/\/www.manager.bg\/sites\/default\/files\/styles\/page_article\/public\/gettyimages-480340717.jpg?itok=4dc8t1pO",
+              "value": "1",
+              "name": "section.type"
+            }
+          },
+          "visible": true,
+          "class": "col-lg-3"
+        }
+      ],
+      "action": "http:\/\/localhost:8000\/admin\/pages\/1\/sections",
+      "method": "post"
+    }
+  }
+}

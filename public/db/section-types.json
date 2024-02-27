@@ -1,0 +1,27 @@
+{
+  "localization": [],
+  "components": {
+    "markup": {
+      "anchor.0": {
+        "href": "http:\/\/api.netix.local\/admin\/pages\/1\/sections\/create?type=1",
+        "text": "",
+        "children": [
+          {
+            "src": "https:\/\/www.manager.bg\/sites\/default\/files\/styles\/page_article\/public\/gettyimages-480340717.jpg?itok=4dc8t1pO",
+            "alt": ""
+          }
+        ]
+      },
+      "anchor.1": {
+        "href": "http:\/\/api.netix.local\/admin\/pages\/1\/sections\/create?type=3",
+        "text": "",
+        "children": [
+          {
+            "src": "https:\/\/www.manager.bg\/sites\/default\/files\/styles\/large\/public\/shutterstock_252904132_1_0_0_0_0.jpg?itok=ZWyiI9Fp",
+            "alt": ""
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+/* You can add utilities classes to this file */
+
+
+.u-clearfix {
+  &::after, &::before {
+    content: ' ';
+    display: block;
+    clear: both;
+
+  }
+}
+
+.u-flex {
+  display: flex!important;
+}
+
+.u-ai-center {
+  align-items: center;
+}
+
+.u-jc-center {
+  justify-content: center;
+}
+
+
+//Center Text
+.u-ctx { text-align: center!important; }; //u-center-text
+
+// Top Margins
+.u-mt-10 { margin-top: 10px!important; };
+.u-mt-20 { margin-top: 20px!important; };
+.u-mt-30 { margin-top: 30px!important; };
+.u-mt-40 { margin-top: 40px!important; };
+.u-mt-60 { margin-top: 60px!important; };
+.u-mt-80 { margin-top: 80px!important; };
+
+// Bottom Margins
+.u-m-0 {
+  margin: 0!important;
+}
+.u-mb-10 { margin-bottom: 10px!important; };
+.u-mb-20 { margin-bottom: 20px!important; }; //small
+.u-mb-30 { margin-bottom: 30px!important; }; //small
+.u-mb-40 { margin-bottom: 40px!important; }; //medium
+.u-mb-60 { margin-bottom: 60px!important; }; //big
+.u-mb-80 { margin-bottom: 80px!important; }; //huge
+
+//Padding
+.u-p-0 {
+  padding: 0!important;
+}
+
+.u-pl-0 {
+  padding-left: 0!important;
+}
+
+.u-p-20 {
+  padding: 20px!important;
+}
+.u-pl-20 { padding-left: 20px!important; } //u-padding-left-small
+.u-pr-20 { padding-right: 20px!important; } //u-padding-right-small
+.u-pt-20 { padding-top: 20px!important; }
+.u-pb-20 { padding-bottom: 20px!important; }
+.u-ptb-20 {
+  padding-top: 20px;
+  padding-bottom: 20px
+}
+.u-plr-20 {
+  padding-left: 20px;
+  padding-right: 20px
+}
+.u-plr-30 {
+  padding-left: 30px;
+  padding-right: 30px
+}
+.u-pt-40 { padding-top: 40px!important; }; //u-padding-top-medium
+.u-text-12 { font-size: $ternary-font-size!important;}; //small-text
+
+
+
+.u-width-100 {
+  width: 100%;
+}
+
+.u-fixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.u-hidden {
+  overflow: hidden;
+}
+
+.u-min-width-300 {
+  min-width: 300px;
+}
+
+
+
+
+.u-grid-8,
+.u-grid-7,
+.u-grid-6,
+.u-grid-5,
+.u-grid-4,
+.u-grid-3,
+.u-grid-2 {
+  display: grid;
+}
+
+.u-grid-2 {
+  grid-template-columns: repeat(2, auto);
+}
+
+.u-grid-3 {
+  grid-template-columns: repeat(3, auto);
+}
+
+.u-grid-4 {
+  grid-template-columns: repeat(4, auto);
+}
+
+.u-grid-5 {
+  grid-template-columns: repeat(5, auto);
+}
+
+.u-grid-6 {
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+}
+
+.u-grid-7 {
+  grid-template-columns: repeat(7, auto);
+}
+
+.u-grid-8 {
+  grid-template-columns: repeat(8, auto);
+}
+
+
+.cover {
+  height: 100vh;
+  width: 100%;
+  background-size: cover!important;
+  background-position: center center!important;
+  background-repeat: no-repeat!important;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.text-left {
+
+}
+
+
+//Color Classes
+
+//Colors
+.c-grey {
+  color: $color-grey!important;
+}
+
+.c-secondary {
+  color: $color-secondary!important;
+}
+
+.c-orange {
+  color: $color-orange!important;
+}

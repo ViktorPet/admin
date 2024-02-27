@@ -1,0 +1,40 @@
+.cke_editable {
+
+}
+
+.highlighted-text {
+    background-color: #860052;
+    padding: 20px;
+    color: white;
+}
+
+.image-align-left {
+    text-align: left;
+}
+
+.image-align-center {
+    text-align: center;
+}
+
+.image-align-right {
+    float: right;
+}
+
+.table {
+    border-collapse: collapse!important;
+    width: 745px;
+    box-sizing: inherit;
+    font-variant-ligatures: normal;
+    text-align: start;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+
+}
+.table td {
+    border:1px solid black;
+}
+
+div[data-oembed-url]> div {
+    max-width: none!important;
+}

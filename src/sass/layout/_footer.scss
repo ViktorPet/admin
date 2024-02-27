@@ -1,0 +1,101 @@
+//Footer
+$message-box-width: 290px;
+
+.main-footer {
+  bottom: 0;
+  left: 320px;
+  width: calc(100% - 280px);
+
+  .social {
+    padding-bottom: 25px;
+    &__list {
+      @include respond(device-480) {
+        display: flex;
+      }
+    }
+    &__item {
+      font-size: $secondary-font-size;
+      vertical-align: bottom;
+      img {
+        min-width: 16px;
+      }
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      @include respond(device-460) {
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+
+    &__link {
+      padding: 0;
+    }
+  }
+
+  .message {
+    position: fixed;
+    right: 40px;
+    bottom: 25px;
+
+    @include respond(device-480) {
+      position: static;
+    }
+
+    &__btn {
+      font-size: $medium-font-size;
+      @include button-size($normal-button-height, $normal-button-line-height);
+
+      @include respond(device-460) {
+        font-size: $secondary-font-size;
+      }
+      &--blue {
+        background: $color-blue;
+        @include border-radius;
+        border-bottom-right-radius: 0!important;
+        padding-right: 50px;
+      }
+    }
+    .message-box {
+      background-color: $color-blue;
+      color: $color-white;
+      @include border-radius;
+      border-bottom-right-radius: 0;
+      width: $message-box-width;
+      @include clearfix;
+      &__header {
+        position: relative;
+        h2 {
+          font-size: $medium-font-size;
+          margin: 0;
+        }
+        .material-icons {
+          position: absolute;
+          right: 0;
+          top: 28px;
+        }
+      }
+      .form-group {
+        margin: 0;
+        padding: 0;
+      }
+      label {
+        display: block;
+        margin: 0;
+      }
+      &__textarea {
+        height: 170px;
+        margin: 0;
+        border: 1px solid white;
+        display: block;
+        width: 100%;
+        background: #fff none;
+        box-shadow: none !important;
+        padding: 10px 0 0 20px;
+        @include border-radius;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+//body.account-login {
+//  .well {
+//    min-height: unset;
+//    padding: unset;
+//    margin-bottom: unset;
+//    background-color: $color-white;
+//    border: unset;
+//    border-radius: unset;
+//    -webkit-box-shadow: unset;
+//    box-shadow: unset;
+//
+//  }
+//  .btn.register.red {
+//    border-radius: 0 !important;
+//    color: $color-white !important;
+//  }
+//}
+
+
+.intro-light {
+    line-height: 24px;
+    a {
+      font-size: 23px;
+      text-transform: none;
+      @include transition(all, .3s, ease-in);
+      &:hover {
+        border-bottom: 1px solid $color-black;
+        @include transition(all, .3s, ease-in);
+      }
+    }
+}
+
+input, textarea {
+  width: 100%;
+}
+
+.form-group {
+  a {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: none;
+    margin: 10px 0;
+
+    @include transition(all, .3s, ease-in);
+    &:hover {
+      border-bottom: 1px solid $color-black;
+      @include transition(all, .3s, ease-in);
+    }
+  }
+}
+.well {
+
+  h2 {
+    font-size: 23px;
+    font-weight: bold;
+  }
+}

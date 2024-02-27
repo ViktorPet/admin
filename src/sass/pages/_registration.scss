@@ -1,0 +1,123 @@
+
+/* Registration*/
+.quickregistration-register, .account-voucher, .account-edit, .account-order, .account-newsletter, .account-wishlist, .account-address, .account-password, .account-delete {
+  #content {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  h1 {
+  }
+  form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.quickregistration-register {
+  .pull-right {
+    width: 100%;
+    float: none;
+    text-align: center;
+    input[type=submit] {
+      margin: 25px auto;
+    }
+  }
+
+}
+
+.account-login {
+  .wrapper {
+    .inner-wrapper {
+      > .cont {
+        max-width: 1000px;
+      }
+    }
+  }
+  .login-form {
+    position: relative;
+    .btn.red {
+      position: absolute;
+      bottom: 5px;
+    }
+  }
+}
+
+.account-register, .checkout-cart .quickregistration-register, .account-edit, .account-delete, .account-password {
+  input[type=submit] {
+    -webkit-border-radius: 0px;
+    -webkit-appearance: none;
+  }
+}
+
+.account-voucher {
+  .buttons {
+    .pull-right {
+      margin-top: 15px;
+      float: none;
+      text-align: center;
+      .btn.btn-primary {
+        margin: 15px auto;
+        -webkit-border-radius: 0px;
+        -webkit-appearance: none;
+      }
+    }
+  }
+}
+
+.quickregistration-register {
+  .container {
+    > .row {
+      @extend .cont;
+      #content {
+        > p {
+          text-align: center;
+          a {
+            text-decoration: underline;
+          }
+        }
+        .form-horizontal {
+          legend {
+            margin-bottom: 15px;
+          }
+          .form-group {
+            .col-sm-10 {
+              margin-bottom: 15px;
+            }
+            .radio-inline {
+              margin-right: 15px;
+            }
+          }
+          #account {
+            width: 50%;
+            float: left;
+            padding-right: 20px;
+          }
+          #address {
+            margin-bottom: 0;
+            width: 50%;
+            float: left;
+            + fieldset > legend {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.registration-form {
+  .form-control {
+    margin-bottom: 0;
+
+  }
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  h4 {
+  }
+  .form-group {
+    margin-bottom: 10px;
+  }
+}

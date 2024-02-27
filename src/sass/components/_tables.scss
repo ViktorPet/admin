@@ -1,0 +1,122 @@
+$search-width: 280px;
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.input-group {
+  &__search {
+    width: $search-width;
+    border-radius: 60px !important;
+  }
+}
+
+.img-circle {
+  img {
+    min-width: 52px;
+  }
+}
+
+.main-footer {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  .pagination {
+    text-align: center;
+    &__item {
+      &.active {
+        span, a {
+          background-color: $color-white !important;
+          border-color: $color-white !important;
+          box-shadow: 0 4px 5px 0 rgba($color-primary, 0.14), 0 1px 10px 0 rgba($color-primary, 0.12), 0 2px 4px -1px rgba($color-primary, 0.2);
+          color: inherit;
+        }
+      }
+    }
+  }
+}
+
+.table {
+  display: flex;
+  flex-flow: column nowrap;
+  //margin: 0.5rem;
+  flex: .5 1 auto;
+
+  .tr {
+    width: 100%;
+    align-items: center;
+    font-size: $secondary-font-size;
+    display: flex;
+    flex-flow: row nowrap;
+    @include border-radius;
+    background-color: $color-white;
+    min-height: 60px;
+    padding: 0 10px 0 5px;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  .th {
+    min-height: auto;
+    & > .td {
+      white-space: normal;
+    }
+
+    &.tr {
+      background-color: transparent;
+    }
+  }
+
+  .td {
+    //display: flex;
+    //flex-flow: row nowrap;
+    //flex-grow: .25;
+    //flex-basis: 0;
+    //word-break: break-word;
+
+    //&.flex-grow-15 {
+    //  flex-grow: 1.5;
+    //  @include respond(device-660) {
+    //    flex-grow: 1;
+    //  }
+    //}
+    //&:nth-of-type(2) {
+    //  flex-grow: 1.5;
+    //  @include respond(device-660) {
+    //    flex-grow: 1;
+    //  }
+    //}
+
+    @include respond(device-1280) {
+      flex-grow: .5;
+    }
+
+    //@include respond(device-660) {
+    //  text-overflow: ellipsis;
+    //  max-width: 160px;
+    //}
+  }
+
+  .checkbox {
+    justify-content: start;
+  }
+
+  .material-buttons {
+    margin: 0 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

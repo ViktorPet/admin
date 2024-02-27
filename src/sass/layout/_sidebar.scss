@@ -1,0 +1,164 @@
+
+////
+// Sidebar style
+////
+
+$sidebar-width: 280px;
+$z-index: 999;
+$logo-width: 100px;
+$sidebar-footer-font-size-info: 18px;
+
+.sidebar {
+  //overflow-y: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $z-index;
+  width: $sidebar-width;
+  background: $color-white;
+  @include transition(all, .3s, ease-in);
+  &.active {
+    left: -280px;
+    @include transition(all, .3s, ease-in);
+  }
+
+  @include respond(device-980) {
+    //display: none;
+  }
+
+  //Header of Sidebar
+
+  .sidebar-logo {
+    &__img {
+      width: $logo-width;
+      margin: 0 auto;
+    }
+  }
+
+  //End of sidebar header
+
+  .ps {
+    max-height: 100vh;
+  }
+
+
+  //Navigation of Sidebar
+
+  .nav {
+
+
+    &__link {
+      padding: 10px 20px 10px 20px;
+      margin-top: 10px;
+      margin-right: 5px;
+      &:hover,
+      &:link,
+      &:active{
+        cursor: pointer;
+        @include border-radius;
+        border-top-left-radius: 0!important;
+        border-bottom-left-radius: 0!important;
+        color: inherit;
+      }
+    }
+
+    &__icon {
+      margin-right: 5px;
+    }
+
+    &__text {
+      display: inline-block;
+      line-height: $default-line-height;
+      vertical-align: text-bottom;
+    }
+    &__drop--container {
+      width: 100%;
+      height: 45px;
+      position: absolute;
+      left: -20px;
+      top: 0;
+    }
+
+    &__drop-icon {
+      float: right;
+      //line-height: 26px;
+      line-height: 45px;
+    }
+
+    .show-drop {
+      opacity: 1;
+      height: auto;
+      overflow: hidden;
+      @include transition(all, .3s, ease-in);
+    }
+
+    .hide-drop {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      @include transition(all, .3s, ease-in);
+    }
+
+    &.drop-nav {
+
+      .nav__link {
+        padding-left: 30px;
+      }
+
+      .nav__text {
+        position: relative;
+        left: 16px;
+      }
+
+    }
+  }
+
+  //End of sidebar navigation
+
+  // Middle content of Sidebar
+  .website-content {
+    background-color: $color-form-background;
+    border-radius: $default-border-radius;
+    display: block;
+    margin: 0 20px;
+    &__image {
+      img {
+        display: block;
+        margin: 0 auto;
+        border-top-right-radius: $default-border-radius;
+        border-top-left-radius: $default-border-radius;
+      }
+    }
+
+    &__footer {
+      font-size: $sidebar-footer-font-size-info;
+      color: $color-grey-light;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      @include clearfix;
+    }
+
+    &__name {
+      margin-right: auto;
+    }
+
+    &__icon {
+      font-size: inherit;
+    }
+  }
+  //End of sidebar middle content
+
+  // Footer of Sidebar
+  &__footer {
+    font-size: $ternary-font-size;
+    bottom: 0;
+    left: 140px;
+    margin-top: 140px;
+    margin-bottom: 25px;
+    color: $color-grey;
+  }
+
+  //End of sidebar footer
+}

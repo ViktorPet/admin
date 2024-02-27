@@ -1,0 +1,214 @@
+{
+  "localization": {
+    "form": {
+      "fields": {
+        "status": "\u0421\u0442\u0430\u0442\u0443\u0441",
+        "cover": "\u0421\u043d\u0438\u043c\u043a\u0430",
+        "date_published": "\u0414\u0430\u0442\u0430 \u043d\u0430 \u043f\u0443\u0431\u043b\u0438\u043a\u0443\u0432\u0430\u043d\u0435",
+        "meta_description": "\u041c\u0435\u0442\u0430 \u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435",
+        "meta_title": "\u041c\u0435\u0442\u0430 \u0417\u0430\u0433\u043b\u0430\u0432\u0438\u0435",
+        "alias": "Seo Url",
+        "description": "\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435",
+        "title": "\u0417\u0430\u0433\u043b\u0430\u0432\u0438\u0435"
+      },
+      "groups": {
+        "heading": {
+          "seo_tool": "SEO \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438",
+          "cover": "\u0421\u043d\u0438\u043c\u043a\u0430",
+          "options": "\u041e\u043f\u0446\u0438\u0438",
+          "general": "\u041e\u0441\u043d\u043e\u0432\u043d\u0438"
+        }
+      }
+    },
+    "page_heading": "Редактиране на страница"
+  },
+  "languages": {
+    "1": {
+      "language_id": 1,
+      "name": "\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438",
+      "code": "bg",
+      "active": true
+    },
+    "2": {
+      "language_id": 2,
+      "name": "English",
+      "code": "en",
+      "active": false
+    }
+  },
+  "components": {
+    "form": {
+      "groups": [
+        {
+          "group_heading": "Основна информация",
+          "fields": {
+            "1": {
+              "title": {
+                "type": "string",
+                "value": "БГ Редакция на основната информация",
+                "name": "translations.1.title",
+                "class": "col-lg-6"
+              },
+              "language_id": {
+                "type": "hidden",
+                "value": 1,
+                "name": "translations.1.language_id",
+                "class": "hidden"
+              },
+              "description": {
+                "type": "textarea",
+                "component": "editor",
+                "value": "БГ Едитор",
+                "name": "translations.1.description",
+                "class": "col-lg-12"
+              }
+            },
+            "2": {
+              "title": {
+                "type": "string",
+                "value": "EN Редакция на основна информация",
+                "name": "translations.2.title",
+                "class": "col-lg-6"
+              },
+              "language_id": {
+                "type": "hidden",
+                "value": 2,
+                "name": "translations.2.language_id",
+                "class": "hidden"
+              },
+              "description": {
+                "type": "textarea",
+                "component": "editor",
+                "value": null,
+                "name": "translations.2.description",
+                "class": "col-lg-12"
+              }
+            }
+          },
+          "components": [
+            "translations"
+          ],
+          "class": "row col-lg-8"
+        },
+        {
+          "group_heading": "Опции",
+
+          "fields": {
+            "status": {
+              "type": "select",
+              "choices_key": "registry.status.options",
+
+              "choices": [
+                {
+                  "id": 2,
+                  "label": "Disabled"
+                },
+                {
+                  "id": 1,
+                  "label": "Enabled"
+                }
+              ],
+              "value": "1",
+              "name": "page.status"
+            },
+            "date_published": {
+              "type": "date",
+              "format": "dd.MM.yyyy",
+              "component": "datetimepicker",
+              "value": "2021-06-11T00:00:00.000+03:00",
+              "name": "page.date_published"
+            }
+          },
+          "class": "row col-sm-6 col-md-6 col-lg-4 aside"
+        },
+        {
+          "group_heading": "SEO Tool",
+          "fields": {
+            "1": {
+              "meta_title": {
+                "type": "string",
+                "value": "Neterra Telecommunications",
+                "name": "translations.1.meta_title",
+                "class": "col-md-12",
+                "component": "seo_title"
+              },
+              "language_id": {
+                "type": "hidden",
+                "value": 1,
+                "name": "slug.1.language_id",
+                "class": "col-md-12 hidden"
+              },
+              "alias": {
+                "type": "string",
+                "value": null,
+                "name": "slug.1.alias",
+                "class": "col-md-12",
+                "component":"seo_alias"
+              },
+              "meta_description": {
+                "type": "textarea",
+                "value": "Нетера осигурява международна свързаност, бърз интернет за бизнеса, услуги за управление на мрежи и сигурност вече 25 години.",
+                "name": "translations.1.meta_description",
+                "class": "col-md-12",
+                "component": "seo_description"
+              }
+            },
+            "2": {
+              "meta_title": {
+                "type": "string",
+                "value": null,
+                "name": "translations.2.meta_title",
+                "class": "col-md-12",
+                "component": "seo_title"
+              },
+              "language_id": {
+                "type": "hidden",
+                "value": 2,
+                "name": "slug.2.language_id",
+                "class": "col-md-12"
+              },
+              "alias": {
+                "type": "string",
+                "value": null,
+                "name": "slug.2.alias",
+                "class": "col-md-12",
+                "component":"seo_alias"
+              },
+              "meta_description": {
+                "type": "textarea",
+                "value": null,
+                "name": "translations.2.meta_description",
+                "class": "col-md-12",
+                "component": "seo_description"
+              }
+            }
+          },
+          "components": [
+            "translations",
+            "seo"
+          ],
+          "class": "row col-lg-8"
+        },
+        {
+          "group_heading": "cover",
+          "fields":{
+            "cover":{
+              "type":"file",
+              "name":"events.cover",
+              "value":"image.png",
+              "hide":false,
+              "file_manager_url":"http:\/\/netix.local\/file_manager\/dialog.php",
+              "component":"file_manager"
+            }
+          },
+          "components":[
+            "file"
+          ],
+          "class": "row col-sm-6 col-md-6 col-lg-4 aside"
+        }
+      ],
+      "action": "\/admin\/pages",
+      "method": "post"
+    }
+  }
+}

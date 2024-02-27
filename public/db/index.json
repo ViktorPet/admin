@@ -1,0 +1,94 @@
+{
+  "user": [
+    {
+      "href": "\/admin\/users\/1\/edit",
+      "text": "\u0420\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u0430\u0439"
+    },
+    {
+      "href": "\/logout",
+      "text": "\u0418\u0437\u0445\u043e\u0434"
+    }
+  ],
+  "page_title": "\u0421\u044a\u0431\u0438\u0442\u0438\u044f",
+  "components": {
+    "list": {
+      "elements_heading": {
+        "title": "\u0417\u0430\u0433\u043b\u0430\u0432\u0438\u0435"
+      },
+      "elements": [
+        {
+          "primary_key": 1,
+          "buttons": [
+            {
+              "is_published": 0,
+              "type": "toggle_button",
+              "url": "\/admin\/events\/status\/1",
+              "method": "PUT"
+            },
+            {
+              "type": "edit",
+              "url": "\/admin\/events\/1\/edit",
+              "method": "GET",
+              "class": " glyphicon glyphicon-edit"
+            },
+            {
+              "type": "delete",
+              "url": "\/admin\/events\/1",
+              "method": "DELETE",
+              "class": " glyphicon glyphicon-trash"
+            }
+          ],
+          "column_elements": [
+            {
+              "type": "image",
+              "constants": "cover",
+              "value": ""
+            },
+            {
+              "type": "string",
+              "constants": "title",
+              "value": "\u0444\u0430\u0434\u0444\u0430\u0434\u0441\u0444"
+            }
+          ],
+          "children": [
+          ]
+        }
+      ],
+      "navbar": {
+        "buttons": [
+          {
+            "type": "create",
+            "url": "\/admin\/events\/create",
+            "method": "GET",
+            "text": "\u0414\u043e\u0431\u0430\u0432\u0438"
+          },
+          {
+            "type": "save",
+            "url": "\/admin\/events",
+            "method": "POST",
+            "text": "\u0417\u0430\u043f\u0438\u0448\u0438"
+          }
+        ]
+      },
+      "pagination": {
+        "total": 1,
+        "per_page": 30,
+        "page": 1
+      }
+    }
+  },
+  "languages": {
+    "1": {
+      "language_id": 1,
+      "name": "\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438",
+      "code": "bg",
+      "active": true
+    },
+    "2": {
+      "language_id": 2,
+      "name": "English",
+      "code": "en",
+      "active": false
+    }
+  }
+}

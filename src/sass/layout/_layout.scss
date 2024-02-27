@@ -1,0 +1,146 @@
+// Page Header
+
+.page-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  margin: 0 0 20px;
+  padding: 0 20px;
+  border-bottom: none;
+
+  @include respond(device-460) {
+    margin: 0 0 30px;
+    padding: 0 10px;
+  }
+
+
+
+  header {
+    display: flex;
+    margin-right: auto;
+
+    @include respond(device-460) {
+      display: block;
+    }
+    h1 {
+      display: inline-block;
+      font-size: $large-font-size;
+      color: $color-secondary;
+      font-weight: bold;
+    }
+    .button-group {
+      display: flex;
+    }
+
+    &.u-width-100 {
+      .button-group {
+        align-items: center;
+        margin-left: auto;
+      }
+    }
+
+    .btn {
+      margin-left: 10px;
+
+      @include respond(device-380) {
+        margin-left: 5px;
+      }
+    }
+  }
+
+
+  .input-group {
+    width: 280px;
+    i, img {
+      position: absolute;
+      right: 20px;
+      top: 7px;
+      z-index: 4;
+      color: $color-secondary;
+      font-size: $large-font-size;
+      line-height: $large-line-height;
+    }
+    i {
+      top: 9px;
+    }
+  }
+}
+
+//Main Content
+.main-panel {
+  background-color: $color-background;
+  height: 100%;
+  width: calc(100% - 280px);
+  margin-left: 280px;
+  padding: 20px 20px 0 20px;
+  @include transition(all, .3s, ease-in);
+  @include respond(device-980) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+
+  &.active {
+    width: 100%;
+    margin-left: 0;
+    @include transition(all, .3s, ease-in);
+  }
+}
+
+.navbar.navbar-transparent {
+  padding: 0;
+  margin: 0;
+  height: 24px;
+  min-height: 24px;
+}
+
+.main-content {
+  min-height: 100vh;
+  @include clearfix;
+  .card {
+    @include border-radius;
+    &__header {
+      display: flex;
+      font-size: $medium-font-size;
+      color: $color-secondary;
+      h2 {
+        font-size: inherit;
+        word-wrap: break-word;
+        max-width: 100%;
+
+        margin: 0;
+      }
+      .icon-right{
+        margin-left: auto;
+        cursor: pointer;
+      }
+    }
+
+    &__body {
+      .button-group {
+        margin: 20px 0;
+      }
+    }
+
+    &__subtitle {
+      font-size: $ternary-font-size;
+      color: $color-grey;
+    }
+
+    &__files {
+      margin-top: 20px;
+    }
+
+
+    &__items {
+      &--grid {
+        display: grid;
+        grid-gap: 20px;
+        .checkbox {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
